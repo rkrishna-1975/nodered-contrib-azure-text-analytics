@@ -1,0 +1,40 @@
+{
+  "name": "nodered-contrib-azure-text-analytics",
+  "version": "0.1.0",
+  "description": "This is a node to use azure text analytics in node-red",
+  "main": "index.js",
+  "node-red": {
+    "nodes": {
+      "az-text-analytics-config": "./az-text-analytics/az-text-analytics-config.js",
+      "az-detect-lang": "./az-text-analytics/az-detect-lang.js",
+      "az-sentiment": "./az-text-analytics/az-sentiment.js",
+      "az-detect-entities": "./az-text-analytics/az-detect-entities.js",
+      "az-detect-pii" : "./az-text-analytics/az-detect-pii.js",
+      "az-key-phrases" : "./az-text-analytics/az-key-phrases.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkrishna-1975/nodered-contrib-azure-text-analytics.git"
+  },
+  "keywords": [
+    "azure",
+    "node-red",
+    "nodered",
+    "text-analytics",
+    "sentiment"
+  ],
+  "author": "Ramki Ramaswamy",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rkrishna-1975/nodered-contrib-azure-text-analytics/issues"
+  },
+  "homepage": "https://github.com/rkrishna-1975/nodered-contrib-azure-text-analytics#readme",
+  "dependencies": {
+    "@azure/ai-text-analytics": "~1.0.0-preview.2"
+  },
+  "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/quickstarts/text-analytics-sdk?tabs=version-3&pivots=programming-language-javascript"
+}
